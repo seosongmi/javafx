@@ -1,4 +1,5 @@
 package fxml;
+
 //p.858 hbox대신 root입력
 import javafx.application.Application;
 import javafx.collections.ObservableList;
@@ -16,7 +17,7 @@ public class AppMain extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		HBox root = new HBox(); //hbox는 컨트롤들을 옆으로 길게 늘어놓는 컨테이너
+		HBox root = new HBox(); // hbox는 컨트롤들을 옆으로 길게 늘어놓는 컨테이너
 		root.setPadding(new Insets(10));
 		root.setSpacing(10);
 		root.setPrefSize(700, 300);
@@ -33,22 +34,22 @@ public class AppMain extends Application {
 
 			@Override
 			public void handle(ActionEvent event) {
-					textField.setText("확인을 눌렀습니다");
-				}
-			});
-		
+				textField.setText("확인을 눌렀습니다");
+			}
+		});
+
 		Button button1 = new Button();
 		button1.setText("취소");
-	
+
 		button1.setPrefSize(100, 100);
 		button1.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent event) {
-					textField.setText(null);
-				}
-			});
-		
+				textField.setText(null);
+			}
+		});
+
 		ObservableList list = root.getChildren();
 		list.add(textField);
 		list.add(button);
