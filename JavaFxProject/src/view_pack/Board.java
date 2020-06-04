@@ -9,60 +9,58 @@ public class Board {
 	private SimpleStringProperty exitDate;
 	private SimpleStringProperty content;
 	
-	public void settitle(String title) {
+	Board(String title, String password, String publicity, String exitDate, String content){
+		this.title = new SimpleStringProperty(title);
+		this.password = new SimpleStringProperty(password);
+		this.publicity = new SimpleStringProperty(publicity);
+		this.exitDate = new SimpleStringProperty(exitDate);
+		this.content = new SimpleStringProperty(content);
+	}
+	
+	
+	public void setTitle(String title) {
 		this.title.set(title);
 	}
-	
-	public String gettitle() {
+	public String getTitle() {
 		return this.title.get();
 	}
-	public SimpleStringProperty title() {
+	public SimpleStringProperty titleProperty() {
 		return this.title;
 	}
-	
-	public void setpassword(String password) {
+	public void setPassword(String password) {
 		this.password.set(password);
 	}
-	
-	public String getpassword() {
+	public String getPassword() {
 		return this.password.get();
 	}
-	public SimpleStringProperty password() {
+	public SimpleStringProperty passwordProperty() {
 		return this.password;
 	}
-	
-	public void setpublicity(String publicity) {
+	public void setPublicity(String publicity) {
 		this.publicity.set(publicity);
 	}
-	
-	public String getpublicity() {
+	public String getPublicity() {
 		return this.publicity.get();
 	}
-	public SimpleStringProperty publicity() {
+	public SimpleStringProperty publicityProperty() {
 		return this.publicity;
 	}
-	
-	public void setexitDate(String exitDate) {
+	public void setExitDate(String exitDate) {
 		this.exitDate.set(exitDate);
 	}
-	
-	public String getexitDate() {
+	public String getExitDate() {
 		return this.exitDate.get();
 	}
-	public SimpleStringProperty exitDate() {
+	public SimpleStringProperty exitDateProperty() {
 		return this.exitDate;
 	}
-	
-	public void setcontent(String content) {
+	public void setContent(String content) {
 		this.content.set(content);
 	}
-	
-	public String getcontent() {
+	public String getContent() {
 		return this.content.get();
 	}
-	public SimpleStringProperty content() {
+	public SimpleStringProperty contentProperty() {
 		return this.content;
 	}
 }
-
-
