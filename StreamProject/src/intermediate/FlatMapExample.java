@@ -1,5 +1,5 @@
 package intermediate;
-//p.801실습
+//p.801실습 (6/18)
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
@@ -31,16 +31,17 @@ public class FlatMapExample {
 
 				@Override
 				public IntStream apply(String t) {
-					String[] strArr = t.split(",");
-					int[] intArr = new int[strArr.length];
-					for(int i = 0; i<strArr.length; i++) {
-						intArr[i] = Integer.parseInt(strArr[i].trim());
+					String[] strAry = t.split(",");
+					int[] intArr = new int[strAry.length];
+					for(int i = 0; i<strAry.length; i++) {
+						intAry[i] = Integer.parseInt(strAry[i].trim());
 					}
-					return Arrays.stream(intArr);
+					return Arrays.stream(intAry);
 				}
 	
 
 			})
-			.forEach(number -> System.out.println(number));
+			.forEach(System.out::println);
+					//number -> System.out.println(number));
 	}
 }
