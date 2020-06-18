@@ -26,7 +26,7 @@ public class ViewController implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// 초기화지정
-		ObservableList<String> list = FXCollections.observableArrayList("GalaxyS1", "GalaxyS2", "GalaxyS3", "GalaxyS4");
+		l("GalaxyS1", "GalaxyS2", "GalaxyS3", "GalaxyS4");
 		list.add("GalaxyS5");
 		list.add("GalaxyS6");
 		list.add("GalaxyS7");

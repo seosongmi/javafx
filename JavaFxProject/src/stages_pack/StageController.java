@@ -52,14 +52,7 @@ public class StageController implements Initializable {
 
 			}
 		});
-		btnChart.setOnAction(new EventHandler<ActionEvent>() {
-
-			@Override
-			public void handle(ActionEvent arg0) {
-				buttonChartAction(arg0);
-
-			}
-		});
+		
 
 		TableColumn<Student, ?> tcName = tableView.getColumns().get(0);
 		tcName.setCellValueFactory(new PropertyValueFactory("name"));
