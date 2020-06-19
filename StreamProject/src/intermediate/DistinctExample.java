@@ -11,8 +11,8 @@ public class DistinctExample {
 //		sum = is.distinct().peek(System.out::println).sum();
 //		System.out.println("sum:" + sum);
 
-		List<Student> list = Arrays.asList(new Student("Hong", 33), new Student("Hong", 33), new Student("Hwang", 37),
-				new Student("Park", 44));
+		List<Students> list = Arrays.asList(new Students("Hong", 33), new Students("Hong", 33), new Students("Hwang", 37),
+				new Students("Park", 44));
 		list.stream().distinct().forEach(s -> System.out.println(s));
 	}
 
