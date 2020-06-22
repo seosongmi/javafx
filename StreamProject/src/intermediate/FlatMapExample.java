@@ -34,9 +34,9 @@ public class FlatMapExample {
 					String[] strAry = t.split(",");
 					int[] intArr = new int[strAry.length];
 					for(int i = 0; i<strAry.length; i++) {
-						intAry[i] = Integer.parseInt(strAry[i].trim());
+						intArr[i] = Integer.parseInt(strAry[i].trim());
 					}
-					return Arrays.stream(intAry);
+					return Arrays.stream(intArr);
 				}
 	
 
